@@ -1,0 +1,49 @@
+Time resolution is 1 ps
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+WARNING: File sbox.mem referenced on F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv at line 566 cannot be opened for reading. Please ensure that this file is available in the current working directory or parent directory of xsim.dir location specified via -xsimdir switch.
+[66000] load_ktemp len, check round 1
+[66000] PASS ktemp_in_rotword = 0c0d0e0f
+[66000] PASS ktemp_after_rotword = 0d0e0f0c
+[66000] PASS ktemp_after_subword = d7ab76fe
+[66000] PASS ktemp_after_addrcon = d6ab76fe
+[275000] PASS round_key[0] = 000102030405060708090a0b0c0d0e0f
+[275000] PASS round_key[1] = d6aa74fdd2af72fadaa678f1d6ab76fe
+[275000] PASS round_key[2] = b692cf0b643dbdf1be9bc5006830b3fe
+[275000] PASS round_key[3] = b6ff744ed2c2c9bf6c590cbf0469bf41
+[275000] PASS round_key[4] = 47f7f7bc95353e03f96c32bcfd058dfd
+[275000] PASS round_key[5] = 3caaa3e8a99f9deb50f3af57adf622aa
+[275000] PASS round_key[6] = 5e390f7df7a69296a7553dc10aa31f6b
+[275000] PASS round_key[7] = 14f9701ae35fe28c440adf4d4ea9c026
+[275000] PASS round_key[8] = 47438735a41c65b9e016baf4aebf7ad2
+[275000] PASS round_key[9] = 549932d1f08557681093ed9cbe2c974e
+[275000] PASS round_key[10] = 13111d7fe3944a17f307a78b4d2b30c5
+[286000] PASS round_count=1 (sau vong 0): state_reg = 00102030405060708090a0b0c0d0e0f0
+[296000] PASS round_count=2 (sau vong 1): state_reg = 89d810e8855ace682d1843d8cb128fe4
+[306000] PASS round_count=3 (sau vong 2): state_reg = 4915598f55e5d7a0daca94fa1f0a63f7
+[316000] PASS round_count=4 (sau vong 3): state_reg = fa636a2825b339c940668a3157244d17
+[326000] PASS round_count=5 (sau vong 4): state_reg = 247240236966b3fa6ed2753288425b6c
+[336000] PASS round_count=6 (sau vong 5): state_reg = c81677bc9b7ac93b25027992b0261996
+[346000] PASS round_count=7 (sau vong 6): state_reg = c62fe109f75eedc3cc79395d84f9cf5d
+[356000] PASS round_count=8 (sau vong 7): state_reg = d1876c0f79c4300ab45594add66ff41f
+[366000] PASS round_count=9 (sau vong 8): state_reg = fde3bad205e5d0d73547964ef1fe37f1
+[376000] PASS round_count=10 (sau vong 9): state_reg = bd6e7c3df2b5779e0b61216e8b10b689
+[380000] round_count = 10, check vong cuoi
+[380000] PASS state_after_subbytes = 7a9f102789d5f50b2beffd9f3dca4ea7
+[380000] PASS state_after_shiftrows = 7ad5fda789ef4e272bca100b3d9ff59f
+[380000] PASS state_in_addroundkey = 7ad5fda789ef4e272bca100b3d9ff59f
+[380000] PASS state_after_addroundkey = 69c4e0d86a7b0430d8cdb78070b4c55a
+[396000] PASS data_out = 69c4e0d86a7b0430d8cdb78070b4c55a

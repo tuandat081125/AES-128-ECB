@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov  9 13:43:09 2026
+# Process ID         : 18212
+# Current directory  : F:/Project/AES-128
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent27100 F:\Project\AES-128\AES-128.xpr
+# Log file           : F:/Project/AES-128/vivado.log
+# Journal file       : F:/Project/AES-128\vivado.jou
+# Running On         : LAPTOP-3O671DBN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450HX
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16873 MB
+# Swap memory        : 9663 MB
+# Total Virtual      : 26537 MB
+# Available Virtual  : 15595 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Project/AES-128/AES-128.xpr
+file mkdir F:/Project/AES-128/AES-128.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv w ]
+add_files -fileset sim_1 F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_aes128 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation

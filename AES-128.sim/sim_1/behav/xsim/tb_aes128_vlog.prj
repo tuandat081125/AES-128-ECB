@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../../../Program/Vivado/2025.2/Vivado/data/rsb/busdef" \
+"../../../../AES-128.srcs/sources_1/new/aes128.sv" \
+"../../../../AES-128.srcs/sources_1/new/add_round_key.sv" \
+"../../../../AES-128.srcs/sources_1/new/mix_columns.sv" \
+"../../../../AES-128.srcs/sources_1/new/rot_word.sv" \
+"../../../../AES-128.srcs/sources_1/new/sbox.sv" \
+"../../../../AES-128.srcs/sources_1/new/shift_rows.sv" \
+"../../../../AES-128.srcs/sources_1/new/sub_bytes.sv" \
+"../../../../AES-128.srcs/sources_1/new/add_rcon.sv" \
+"../../../../AES-128.srcs/sources_1/new/inv_sub_bytes.sv" \
+"../../../../AES-128.srcs/sources_1/new/inv_shift_rows.sv" \
+"../../../../AES-128.srcs/sources_1/new/inv_mix_columns.sv" \
+"../../../../AES-128.srcs/sources_1/new/inv_sbox.sv" \
+"../../../../AES-128.srcs/sim_1/new/tb_aes128.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
