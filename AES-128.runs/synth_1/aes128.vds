@@ -1,0 +1,550 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Nov 13 16:41:31 2026
+# Process ID         : 23836
+# Current directory  : F:/Project/AES-128/AES-128.runs/synth_1
+# Command line       : vivado.exe -log aes128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes128.tcl
+# Log file           : F:/Project/AES-128/AES-128.runs/synth_1/aes128.vds
+# Journal file       : F:/Project/AES-128/AES-128.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-3O671DBN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450HX
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16873 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25463 MB
+# Available Virtual  : 7011 MB
+#-----------------------------------------------------------
+source aes128.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 570.395 ; gain = 258.188
+Command: read_checkpoint -auto_incremental -incremental F:/Project/AES-128/AES-128.srcs/utils_1/imports/synth_1/aes128.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from F:/Project/AES-128/AES-128.srcs/utils_1/imports/synth_1/aes128.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top aes128 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 25756
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1321.824 ; gain = 544.098
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'aes128' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sub_bytes' [F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sbox' [F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sbox' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sub_bytes' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'shift_rows' [F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'shift_rows' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mix_columns' [F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mix_columns' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'add_round_key' [F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_round_key' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'inv_shift_rows' [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'inv_shift_rows' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'inv_sub_bytes' [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'inv_sbox' [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'inv_sbox' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'inv_sub_bytes' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'inv_mix_columns' [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'inv_mix_columns' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rot_word' [F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'rot_word' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'add_rcon' [F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_rcon' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv:23]
+WARNING: [Synth 8-689] width (6) of port connection 'w' does not match port width (4) of module 'add_rcon' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:181]
+WARNING: [Synth 8-6090] variable 'next_state' is written by both blocking and non-blocking assignments, entire logic could be removed [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:514]
+INFO: [Synth 8-6155] done synthesizing module 'aes128' (0#1) [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:23]
+WARNING: [Synth 8-87] always_comb on 'data_in_subbytes_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:101]
+WARNING: [Synth 8-87] always_comb on 'ktemp_after_subword_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:182]
+WARNING: [Synth 8-87] always_comb on 'state_in_shiftrows_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:107]
+WARNING: [Synth 8-87] always_comb on 'state_in_addroundkey_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:119]
+WARNING: [Synth 8-87] always_comb on 'state_in_inv_addroundkey_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:148]
+WARNING: [Synth 8-87] always_comb on 'state_after_round_inv_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:228]
+WARNING: [Synth 8-87] always_comb on 'state_in_inv_mixcolumns_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:155]
+WARNING: [Synth 8-87] always_comb on 'ld_key_expansion_running_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:441]
+WARNING: [Synth 8-87] always_comb on 'clr_key_expansion_running_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:451]
+WARNING: [Synth 8-87] always_comb on 'ld_round_running_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:539]
+WARNING: [Synth 8-87] always_comb on 'clr_round_running_reg' did not result in combinational logic [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:555]
+WARNING: [Synth 8-3848] Net w_count_in in module/entity aes128 does not have driver. [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:355]
+WARNING: [Synth 8-3848] Net ld_w_count in module/entity aes128 does not have driver. [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:354]
+WARNING: [Synth 8-3848] Net round_count_in in module/entity aes128 does not have driver. [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:372]
+WARNING: [Synth 8-3848] Net ld_round_count in module/entity aes128 does not have driver. [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:371]
+WARNING: [Synth 8-3848] Net data_out_ready in module/entity aes128 does not have driver. [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:33]
+WARNING: [Synth 8-3848] Net state_in_inv_shiftrows in module/entity aes128 does not have driver. [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:125]
+WARNING: [Synth 8-7129] Port data_out_ready in module aes128 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1470.312 ; gain = 692.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1470.312 ; gain = 692.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1470.312 ; gain = 692.586
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1470.312 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [F:/Project/AES-128/AES-128.srcs/constrs_1/new/clock_freq.xdc]
+Finished Parsing XDC File [F:/Project/AES-128/AES-128.srcs/constrs_1/new/clock_freq.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1535.539 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1535.539 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1535.539 ; gain = 757.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1535.539 ; gain = 757.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1535.539 ; gain = 757.812
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_ke_reg' in module 'aes128'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'aes128'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 IDLE_KE |                             0001 |                      00000000000
+                 TEMP_KE |                             0010 |                      00000000001
+                ROUND_KE |                             0100 |                      00000000010
+                 DONE_KE |                             1000 |                      00000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_ke_reg' using encoding 'one-hot' in module 'aes128'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                             0000
+           KEY_EXPANSION |                           000010 |                             0001
+                  ROUND0 |                           000100 |                             0010
+               ROUND1TO9 |                           001000 |                             0011
+                 ROUND10 |                           010000 |                             0100
+                    DONE |                           100000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'aes128'
+WARNING: [Synth 8-327] inferring latch for variable 'state_after_round_inv_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:228]
+WARNING: [Synth 8-327] inferring latch for variable 'state_in_addroundkey_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:119]
+WARNING: [Synth 8-327] inferring latch for variable 'ktemp_after_subword_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:182]
+WARNING: [Synth 8-327] inferring latch for variable 'state_in_inv_mixcolumns_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:155]
+WARNING: [Synth 8-327] inferring latch for variable 'state_in_inv_addroundkey_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:148]
+WARNING: [Synth 8-327] inferring latch for variable 'state_in_shiftrows_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:107]
+WARNING: [Synth 8-327] inferring latch for variable 'ld_key_expansion_running_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:441]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_key_expansion_running_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:451]
+WARNING: [Synth 8-327] inferring latch for variable 'ld_round_running_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:539]
+WARNING: [Synth 8-327] inferring latch for variable 'clr_round_running_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:555]
+WARNING: [Synth 8-327] inferring latch for variable 'data_in_subbytes_reg' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:101]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 1535.539 ; gain = 757.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---XORs : 
+	   2 Input    128 Bit         XORs := 2     
+	   2 Input     32 Bit         XORs := 5     
+	   2 Input      8 Bit         XORs := 90    
+	   3 Input      8 Bit         XORs := 12    
+	   5 Input      8 Bit         XORs := 9     
+	   4 Input      8 Bit         XORs := 3     
+	   7 Input      8 Bit         XORs := 2     
+	   9 Input      8 Bit         XORs := 1     
+	   8 Input      8 Bit         XORs := 10    
++---Registers : 
+	             1408 Bit    Registers := 1     
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input 1408 Bit        Muxes := 2     
+	   2 Input 1280 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 10    
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 64    
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 2     
+	   6 Input    4 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 14    
+	   6 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port data_out_ready in module aes128 is either unconnected or has no load
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[31]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[31]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[30]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[30]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[29]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[29]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[23]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[23]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[22]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[22]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[21]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[21]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[20]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[20]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[13]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[12]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[11]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[10]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[9]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[8]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[7]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[6]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[5]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[4]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[3]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[2]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[1]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[0]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[31]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[31]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[30]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[30]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[29]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[29]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[28]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[27]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[26]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[25]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[24]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[23]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[23]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[22]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[22]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[21]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[21]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[20]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[20]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[19]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[18]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[17]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[16]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[15]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[14]  is always disabled
+WARNING: [Synth 8-264] enable of latch i_1/\ktemp_after_subword_reg[14]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1772.855 ; gain = 995.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 1772.855 ; gain = 995.129
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:29 ; elapsed = 00:01:33 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[0]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[1]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[2]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[3]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[4]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[5]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[6]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[7]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[8]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[9]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[10]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[11]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[12]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[13]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[14]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[15]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[16]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[17]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[18]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[19]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[20]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[21]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[22]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[23]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[24]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[25]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[26]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[27]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[28]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[29]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[30]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[31]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[32]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[33]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[34]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[35]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[36]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[37]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[38]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[39]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[40]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[41]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[42]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[43]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[44]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[45]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[46]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[47]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[48]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[49]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[50]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[51]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[52]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[53]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[54]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[55]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[56]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[57]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[58]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[59]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[60]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[61]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[62]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[63]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[64]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[65]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[66]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[67]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[68]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[69]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[70]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[71]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[72]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[73]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[74]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[75]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[76]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[77]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[78]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[79]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[80]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[81]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[82]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[83]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[84]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[85]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[86]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[87]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[88]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[89]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[90]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[91]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[92]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[93]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[94]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[95]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[96]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[97]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[98]) is unused and will be removed from module aes128.
+WARNING: [Synth 8-3332] Sequential element (data_in_subbytes_reg[99]) is unused and will be removed from module aes128.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:34 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:01:37 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT1  |    21|
+|3     |LUT2  |   299|
+|4     |LUT3  |   163|
+|5     |LUT4  |   287|
+|6     |LUT5  |   179|
+|7     |LUT6  |   931|
+|8     |MUXF7 |     1|
+|9     |FDCE  |     8|
+|10    |FDPE  |     2|
+|11    |FDRE  |  1557|
+|12    |FDSE  |     5|
+|13    |LD    |   140|
+|14    |IBUF  |   260|
+|15    |OBUF  |   129|
+|16    |OBUFT |     1|
++------+------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2156 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:33 . Memory (MB): peak = 1991.375 ; gain = 1148.422
+Synthesis Optimization Complete : Time (s): cpu = 00:01:33 ; elapsed = 00:01:38 . Memory (MB): peak = 1991.375 ; gain = 1213.648
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1991.375 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 141 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'aes128' is not ideal for floorplanning, since the cellview 'aes128' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1991.375 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 140 instances were transformed.
+  LD => LDCE: 140 instances
+
+Synth Design complete | Checksum: 547c6a60
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 233 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:38 ; elapsed = 00:01:45 . Memory (MB): peak = 1991.375 ; gain = 1417.137
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1991.375 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/Project/AES-128/AES-128.runs/synth_1/aes128.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file aes128_utilization_synth.rpt -pb aes128_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 13 16:43:28 2026...

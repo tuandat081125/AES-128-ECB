@@ -201,7 +201,7 @@ module aes128(
   logic mode_normal;
   logic [0:127] state_after_round;
   
-  //AddRounKey Mux
+  //AddRoundKey Mux
   always_comb begin
     if(mode_round0) begin
       state_in_addroundkey = state_reg;
@@ -219,9 +219,9 @@ module aes128(
   logic mode_inv_round0;
   logic mode_inv_round10;
   logic mode_inv_normal;
-  logic state_after_round_inv;
+  logic [0:127] state_after_round_inv;
   
-  //InvAddRounKey Mux
+  //InvAddRoundKey Mux
   always_comb begin
     if(mode_round0) begin
       state_in_inv_addroundkey = state_reg;
@@ -229,12 +229,14 @@ module aes128(
       //có thể có Latch ở đây, xem xét sửa sau
     end
     else if(mode_round10) begin
-      state_in_inv_addroundkey = state_after_inv_subbytes;
+      state_in_inv_shiftrows = state_reg;
+      state_in_inv_addroundkey = state_after_inv_subbytes; 
       state_after_round_inv = state_after_inv_addroundkey;
     end
     else if(mode_normal) begin
+      state_in_inv_shiftrows = state_reg;
       state_in_inv_addroundkey = state_after_inv_subbytes;
-      state_in_inv_mixcolumns = state_after_addroundkey;
+      state_in_inv_mixcolumns = state_after_inv_addroundkey;
       state_after_round_inv = state_after_inv_mixcolumns;
     end
   end
@@ -295,7 +297,7 @@ module aes128(
   
   logic [0:31] woffs [0:3];
   
-  //4w caculate
+  //4w calculate
   always_comb begin
     woffs[0] = key_expanded [(w_count*4-4)*32 +: 32] ^ ktemp_reg;
     woffs[1] = key_expanded [(w_count*4-3)*32 +: 32] ^ woffs[0];
@@ -312,16 +314,16 @@ module aes128(
   end 
   
   logic start_key_expansion;
+  logic ld_init_key;
   
   //Key Expanded Reg
   always_ff @(posedge clk) begin
     if(!rst) begin
       key_expanded <= 0;
     end
-    else if(start && !running) begin
+    else if(ld_init_key) begin
       key_expanded[0:127] <= key;
-      key_expanded[128:1047] <= 0;
-      start_key_expansion <= 1;
+      key_expanded[128:1407] <= 0;
     end
     else if(ld_key_expanded  && running) begin
       key_expanded[(w_count*4)*32 +: 32] <= woffs[0];
@@ -331,17 +333,28 @@ module aes128(
     end
   end
   
+  //Inv Reg
+  logic ld_inv;
+  logic inv_reg;
+  
+  always_ff @(posedge clk) begin
+    if(ld_inv) begin 
+      inv_reg <= inv;
+    end
+  end
+  
   logic ld_state;
+  logic ld_init_state;
   
   //State Reg
   always_ff @(posedge clk) begin
     if(!rst) begin
       state_reg <= 0;
     end
-    if(start && !running) begin
+    else if(ld_init_state) begin
       state_reg <= data_in;
     end
-    else if(ld_state & inv) begin
+    else if(ld_state & inv_reg) begin
       state_reg <= state_after_round_inv;
     end
     else if(ld_state) begin
@@ -354,9 +367,13 @@ module aes128(
   //W Counter Reg
   logic ld_w_count;
   logic [5:0] w_count_in;
+  logic clr_w_count;
   
   always_ff @(posedge clk) begin
     if(!rst) begin
+      w_count <= 1;
+    end
+    else if(clr_w_count) begin
       w_count <= 1;
     end
     else if(incr_w_count) begin
@@ -371,9 +388,13 @@ module aes128(
   logic incr_round_count;
   logic ld_round_count;
   logic [4:0] round_count_in;
+  logic clr_round_count;
   
   always_ff @(posedge clk) begin
     if(!rst) begin
+      round_count <= 0;
+    end
+    else if(clr_round_count) begin
       round_count <= 0;
     end
     else if(incr_round_count) begin
@@ -383,6 +404,21 @@ module aes128(
       round_count <= round_count_in + 1;
     end
   end
+  
+  
+  //Done Reg
+  logic done;
+  logic set_done;
+  logic clr_done;
+  
+  always_ff @(posedge clk) begin
+    if(set_done) begin
+      done <= 1;
+    end
+    else if(clr_done) begin
+      done <= 0;
+    end
+  end 
      
   //Controlpath Key Expansion
   logic key_expansion_done;
@@ -425,6 +461,9 @@ module aes128(
         end
       end
       DONE_KE: begin
+        if(set_done) begin
+          next_state_ke = IDLE_KE;
+        end
       end
       default: begin
       end
@@ -436,6 +475,9 @@ module aes128(
     incr_w_count = 0;
     ld_key_expanded = 0;
     key_expansion_done = 0;
+    ld_key_expansion_running = 0;
+    clr_key_expansion_running = 0;
+    clr_w_count = 0;
     case(state_ke)
       IDLE_KE: begin
         if(start_key_expansion) begin
@@ -454,6 +496,7 @@ module aes128(
       end
       DONE_KE: begin
         key_expansion_done = 1;
+        clr_w_count = 1;
       end
       default: begin
       end
@@ -473,7 +516,7 @@ module aes128(
 
   state_t state, next_state;
   
-  always_ff @(posedge clk or negedge rst) begin
+  always_ff @(posedge clk) begin
     if (!rst)
       state <= IDLE;
     else
@@ -508,19 +551,14 @@ module aes128(
         end
       end
       ROUND10: begin
-        next_state = DONE;
-      end
-      DONE: begin
-        if(!rst) begin
-          next_state <= IDLE;
-        end
+        next_state = IDLE;
       end
       default: begin
       end
     endcase
   end
   
-  logic done;
+  
   always_comb begin
     start_key_expansion = 0;
     mode_round0 = 0;
@@ -528,11 +566,20 @@ module aes128(
     mode_round10 = 0;
     incr_round_count = 0;
     ld_state = 0;
-    done = 0;
+    ld_inv = 0;
+    ld_init_state = 0;
+    ld_init_key = 0;
+    set_done = 0;
+    clr_done = 0;
+    clr_round_count = 0;
     case(state)
       IDLE: begin
         if(start) begin
           start_key_expansion = 1;
+          ld_inv = 1;
+          ld_init_state = 1;
+          ld_init_key = 1;
+          clr_done = 1;
         end
       end
       KEY_EXPANSION: begin
@@ -554,9 +601,8 @@ module aes128(
         ld_state = 1;
         mode_round10 = 1;
         clr_round_running = 1;
-      end
-      DONE: begin
-        done = 1;
+        set_done = 1;
+        clr_round_count = 1;
       end
       default: begin
       end
@@ -564,6 +610,7 @@ module aes128(
   end
   
   assign data_out = state_reg;
+  assign data_out_ready = done;
       
    
 endmodule

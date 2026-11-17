@@ -20,17 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module inv_shift_rows(
-  input logic [0:127] state_in,
+module inv_shift_rows (
+  input  logic [0:127] state_in,
   output logic [0:127] state_out
 );
-  
+
   always_comb begin
-    for (int row = 0; row <= 3; row++)
-      for (int col = 0; col <= 3; col ++) begin
-        state_out[(col*8)*4 + row*8 +: 8] =
-          state_in[(((col - row) % 4)*8)*4 + row*8 +: 8];
+    state_out = '0; 
+    for (int row = 0; row < 4; row++) begin
+      for (int col = 0; col < 4; col++) begin
+        state_out[(col*4 + row)*8 +: 8] =
+          state_in[(((col - row + 4) % 4)*4 + row)*8 +: 8];
       end
+    end
   end
-  
+
 endmodule

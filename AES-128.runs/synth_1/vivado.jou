@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Fri Nov 13 16:41:31 2026
+# Process ID         : 23836
+# Current directory  : F:/Project/AES-128/AES-128.runs/synth_1
+# Command line       : vivado.exe -log aes128.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes128.tcl
+# Log file           : F:/Project/AES-128/AES-128.runs/synth_1/aes128.vds
+# Journal file       : F:/Project/AES-128/AES-128.runs/synth_1\vivado.jou
+# Running On         : LAPTOP-3O671DBN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450HX
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16873 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25463 MB
+# Available Virtual  : 7011 MB
+#-----------------------------------------------------------
+source aes128.tcl -notrace

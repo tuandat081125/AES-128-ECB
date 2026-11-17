@@ -1,0 +1,1341 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Mon Nov 16 16:15:39 2026
+# Process ID         : 11788
+# Current directory  : F:/Project/AES-128
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent14052 F:\Project\AES-128\AES-128.xpr
+# Log file           : F:/Project/AES-128/vivado.log
+# Journal file       : F:/Project/AES-128\vivado.jou
+# Running On         : LAPTOP-3O671DBN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26300
+# Processor Detail   : 12th Gen Intel(R) Core(TM) i5-12450HX
+# CPU Frequency      : 2688 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 12
+# Host memory        : 16873 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 25463 MB
+# Available Virtual  : 13971 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/Project/AES-128/AES-128.xpr
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at F:/Program/Vivado/2025.2/data/boards/board_files\genesys2\H\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.0 available at F:/Program/Vivado/2025.2/data/boards/board_files\genesys-zu-3eg\B.0\board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_3eg:part0:1.1 available at F:/Program/Vivado/2025.2/data/boards/board_files\genesys-zu-3eg\D.0\board.xml as part xczu3eg-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:gzu_5ev:part0:1.1 available at F:/Program/Vivado/2025.2/data/boards/board_files\genesys-zu-5ev\C.0\board.xml as part xczu5ev-sfvc784-1-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:sword:part0:1.0 available at F:/Program/Vivado/2025.2/data/boards/board_files\sword\C.0\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.0\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:emb-plus-vpr-4616:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\emb-plus-vpr-4616\1.1\board.xml as part xcve2302-sfva784-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24c:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24c\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k24i:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k24i\1.0\board.xml as part xck24-ubva530-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26c\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.2\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.3\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\k26i\1.4\board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.6\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.7 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kc705\1.7\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.6\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu105\1.7\board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.4\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu116\1.5\board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kcu1500\1.2\board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.0\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kd240_som:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kd240_som\1.1\board.xml as part xck24-ubva530-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.0\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kr260_som\1.1\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.2\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.3\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\kv260_som\1.4\board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:scu35:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\scu35\1.0\board.xml as part xcsu35p-sbvb625-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:v80:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\v80\1.0\board.xml as part xcv80-lsva4737-2mhp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.4\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.5 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc707\1.5\board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vc709\1.8\board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\2.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190\production\3.4\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.0\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.1\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.2\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vck190_newl\production\1.3\board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.6\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu108\1.7\board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu110\1.4\board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.0\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.3\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu118\2.4\board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu128\production\1.0\board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu129\production\1.0\board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vcu1525\1.3\board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.0\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.1\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek280\production\1.2\board.xml as part xcve2802-vsvh1760-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385\1.1\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek385_1:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vek385_2\1.0\board.xml as part xc2ve3858-ssva2112-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_mpsoc\1.0\board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vermeo_t1_rfsoc\1.0\board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.0\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.1\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vhk158\production\1.2\board.xml as part xcvh1582-vsva3697-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\2.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.2\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180\production\3.3\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.0\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vmk180_newl\production\1.1\board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.0\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.1\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk120\production\1.2\board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.0\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.1\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vpk180\production\1.2\board.xml as part xcvp1802-lsvc4072-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.0\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vrk160:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\vrk160\1.1\board.xml as part xcvr1602-vsva2488-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.4\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.5 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zc706\1.5\board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.3\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu102\3.4\board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu104\1.1\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.4\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.5\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu106\2.6\board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.2\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.3\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu111\1.4\board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1275\1.0\board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu1285\1.0\board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208\production\2.0\board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu208ld\production\2.0\board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216\production\2.0\board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu216ld\production\2.0\board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670\2.0\board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Program/Vivado/2025.2/data/xhub/boards\XilinxBoardStore\boards\Xilinx\zcu670ld\1.0\board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/Project/AES-128/AES-128.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Board 49-26] cannot add Board Part digilentinc.com:genesys2:part0:1.1 available at F:/Program/Vivado/2025.2/data/boards/board_files\genesys2\H\board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+INFO: [Common 17-14] Message 'Board 49-26' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Program/Vivado/2025.2/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:08 . Memory (MB): peak = 1704.137 ; gain = 302.398
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 16:36:51 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Program/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'w' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:181]
+WARNING: [VRFC 10-3818] variable 'done' is driven by invalid combination of procedural drivers [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:400]
+WARNING: [VRFC 10-2921] 'done' driven by this always_ff block should not be driven by any other process [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:403]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_aes128_sv_3205676280
+Compiling package std.std
+Compiling module xil_defaultlib.drv_cb
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_if_default
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_probe_if_default
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.sub_bytes_default
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.add_round_key
+Compiling module xil_defaultlib.inv_shift_rows
+Compiling module xil_defaultlib.inv_sbox
+Compiling module xil_defaultlib.inv_sub_bytes_default
+Compiling module xil_defaultlib.inv_mix_columns
+Compiling module xil_defaultlib.rot_word
+Compiling module xil_defaultlib.add_rcon
+Compiling module xil_defaultlib.aes128
+Compiling module xil_defaultlib.tb_aes128
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes128_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1743.617 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_aes128_behav -key {Behavioral:sim_1:Functional:tb_aes128} -tclbatch {tb_aes128.tcl} -view {F:/Project/AES-128/tb_aes128_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/Project/AES-128/tb_aes128_behav.wcfg
+source tb_aes128.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+Error: MISMATCH ADDROUNDKEY round=0 got=5f14c49e77ffbc07870d4e403c0e73e1 exp=7ad5fda789ef4e272bca100b3d9ff59f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=1 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=bd6e7c3df2b5779e0b61216e8b10b689
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=1 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=7a9f102789d5f50b2beffd9f3dca4ea7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=1 got=dd35581a338e949c11f994c977cad0d8 exp=54d990a16ba09ab596bbf40ea111702f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=1 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=e9f74eec023020f61bf2ccf2353c21c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=2 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=fde3bad205e5d0d73547964ef1fe37f1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=2 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=5411f4b56bd9700e96a0902fa1bb9aa1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=2 got=becd4ef0ee20b90f9cba4ea58813fd1e exp=3e1c22c0b6fcbf768da85067f6170495
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=2 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=baa03de7a1f9b56ed5512cba5f414d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=3 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=d1876c0f79c4300ab45594add66ff41f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=3 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=3e175076b61c04678dfc2295f6a8bfc0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=3 got=c235469d4f769cf1b0afb1375bdf2f4a exp=b458124c68b68a014b99f82e5f15554c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=3 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=c57e1c159a9bd286f05f4be098c63439
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=4 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=c62fe109f75eedc3cc79395d84f9cf5d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=4 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=b415f8016858552e4bb6124c5f998a4c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=4 got=81e11a0cadf4e59e7e3837ca46847be3 exp=e8dab6901477d4653ff7f5e2e747dd4f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=4 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=9816ee7400f87f556b2c049c8e5ad036
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=5 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=c81677bc9b7ac93b25027992b0261996
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=5 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=e847f56514dadde23f77b64fe7f7d490
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=5 got=707a122ebeed94cca3b6c0658651d8e5 exp=36339d50f9b539269f2c092dc4406d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=5 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=f4bcd45432e554d075f1d6c51dd03b3c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=6 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=247240236966b3fa6ed2753288425b6c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=6 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=36400926f9336d2d9fb59d23c42c3950
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=6 got=2d5d8879f0d37fc93006dccfd5346749 exp=2d6d7ef03f33e334093602dd5bfb12c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=6 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=6385b79ffc538df997be478e7547d691
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=7 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=fa636a2825b339c940668a3157244d17
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=7 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=2dfb02343f6d12dd09337ec75b36e3f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=7 got=6d53d243fee3cef6ad86715a1bd17570 exp=3bd92268fc74fb735767cbe0c0590e2d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=7 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=4c9c1e66f771f0762c3f868e534df256
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=8 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=4915598f55e5d7a0daca94fa1f0a63f7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=8 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=3b59cb73fcd90ee05774222dc067fb68
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=8 got=64d078cbf950d55e37b5c7674f07d174 exp=a7be1a6997ad739bd8c9ca451f618b61
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=8 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=ff87968431d86a51645151fa773ad009
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=9 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=89d810e8855ace682d1843d8cb128fe4
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=9 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=a761ca9b97be8b45d8ad1a611fc97369
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=9 got=a8750c613246ba5c66901e584af4ac4f exp=6353e08c0960e104cd70b751bacad0e7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=9 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=5f72641557f5bc92f7be3b291db9f91a
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=10 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=00102030405060708090a0b0c0d0e0f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=10 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=63cab7040953d051cd60e0e7ba70e18c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH ADDROUNDKEY round=10 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=00112233445566778899aabbccddeeff
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: TIMEOUT: in_scb pass=1 fail=40, scb pass=0 fail=0
+Time: 5020 ns  Iteration: 0  Process: /$unit_aes128_sv_3205676280/aes_env::run/xilinx_isim_temp_7_ln536disable_fork_::_Block530_8  Scope: $unit_aes128_sv_3205676280.aes_env::run  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 532
+SCOREBOARD: PASS=0 FAIL=0
+SCOREBOARD: PASS=1 FAIL=40
+$finish called at time : 5020 ns : File "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" Line 580
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_aes128_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1746.457 ; gain = 2.840
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 16:50:31 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Program/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'w' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:181]
+WARNING: [VRFC 10-3818] variable 'done' is driven by invalid combination of procedural drivers [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:408]
+WARNING: [VRFC 10-2921] 'done' driven by this always_ff block should not be driven by any other process [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:411]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_aes128_sv_3205676280
+Compiling package std.std
+Compiling module xil_defaultlib.drv_cb
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_if_default
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_probe_if_default
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.sub_bytes_default
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.add_round_key
+Compiling module xil_defaultlib.inv_shift_rows
+Compiling module xil_defaultlib.inv_sbox
+Compiling module xil_defaultlib.inv_sub_bytes_default
+Compiling module xil_defaultlib.inv_mix_columns
+Compiling module xil_defaultlib.rot_word
+Compiling module xil_defaultlib.add_rcon
+Compiling module xil_defaultlib.aes128
+Compiling module xil_defaultlib.tb_aes128
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes128_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_aes128_behav -key {Behavioral:sim_1:Functional:tb_aes128} -tclbatch {tb_aes128.tcl} -view {F:/Project/AES-128/tb_aes128_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/Project/AES-128/tb_aes128_behav.wcfg
+source tb_aes128.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+Error: MISMATCH ADDROUNDKEY round=0 got=5f14c49e77ffbc07870d4e403c0e73e1 exp=7ad5fda789ef4e272bca100b3d9ff59f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=1 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=bd6e7c3df2b5779e0b61216e8b10b689
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=1 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=7a9f102789d5f50b2beffd9f3dca4ea7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=1 got=dd35581a338e949c11f994c977cad0d8 exp=54d990a16ba09ab596bbf40ea111702f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=1 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=e9f74eec023020f61bf2ccf2353c21c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=2 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=fde3bad205e5d0d73547964ef1fe37f1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=2 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=5411f4b56bd9700e96a0902fa1bb9aa1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=2 got=becd4ef0ee20b90f9cba4ea58813fd1e exp=3e1c22c0b6fcbf768da85067f6170495
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=2 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=baa03de7a1f9b56ed5512cba5f414d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=3 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=d1876c0f79c4300ab45594add66ff41f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=3 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=3e175076b61c04678dfc2295f6a8bfc0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=3 got=c235469d4f769cf1b0afb1375bdf2f4a exp=b458124c68b68a014b99f82e5f15554c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=3 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=c57e1c159a9bd286f05f4be098c63439
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=4 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=c62fe109f75eedc3cc79395d84f9cf5d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=4 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=b415f8016858552e4bb6124c5f998a4c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=4 got=81e11a0cadf4e59e7e3837ca46847be3 exp=e8dab6901477d4653ff7f5e2e747dd4f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=4 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=9816ee7400f87f556b2c049c8e5ad036
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=5 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=c81677bc9b7ac93b25027992b0261996
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=5 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=e847f56514dadde23f77b64fe7f7d490
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=5 got=707a122ebeed94cca3b6c0658651d8e5 exp=36339d50f9b539269f2c092dc4406d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=5 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=f4bcd45432e554d075f1d6c51dd03b3c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=6 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=247240236966b3fa6ed2753288425b6c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=6 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=36400926f9336d2d9fb59d23c42c3950
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=6 got=2d5d8879f0d37fc93006dccfd5346749 exp=2d6d7ef03f33e334093602dd5bfb12c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=6 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=6385b79ffc538df997be478e7547d691
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=7 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=fa636a2825b339c940668a3157244d17
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=7 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=2dfb02343f6d12dd09337ec75b36e3f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=7 got=6d53d243fee3cef6ad86715a1bd17570 exp=3bd92268fc74fb735767cbe0c0590e2d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=7 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=4c9c1e66f771f0762c3f868e534df256
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=8 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=4915598f55e5d7a0daca94fa1f0a63f7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=8 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=3b59cb73fcd90ee05774222dc067fb68
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=8 got=64d078cbf950d55e37b5c7674f07d174 exp=a7be1a6997ad739bd8c9ca451f618b61
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=8 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=ff87968431d86a51645151fa773ad009
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=9 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=89d810e8855ace682d1843d8cb128fe4
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=9 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=a761ca9b97be8b45d8ad1a611fc97369
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=9 got=a8750c613246ba5c66901e584af4ac4f exp=6353e08c0960e104cd70b751bacad0e7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=9 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=5f72641557f5bc92f7be3b291db9f91a
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=10 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=00102030405060708090a0b0c0d0e0f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=10 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=63cab7040953d051cd60e0e7ba70e18c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH ADDROUNDKEY round=10 got=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx exp=00112233445566778899aabbccddeeff
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: TIMEOUT: in_scb pass=1 fail=40, scb pass=0 fail=0
+Time: 5020 ns  Iteration: 0  Process: /$unit_aes128_sv_3205676280/aes_env::run/xilinx_isim_temp_7_ln536disable_fork_::_Block530_8  Scope: $unit_aes128_sv_3205676280.aes_env::run  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 532
+SCOREBOARD: PASS=0 FAIL=0
+SCOREBOARD: PASS=1 FAIL=40
+$finish called at time : 5020 ns : File "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" Line 580
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_aes128_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1778.488 ; gain = 15.395
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 16:57:53 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Program/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'w' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:181]
+WARNING: [VRFC 10-3818] variable 'done' is driven by invalid combination of procedural drivers [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:410]
+WARNING: [VRFC 10-2921] 'done' driven by this always_ff block should not be driven by any other process [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:413]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_aes128_sv_3205676280
+Compiling package std.std
+Compiling module xil_defaultlib.drv_cb
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_if_default
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_probe_if_default
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.sub_bytes_default
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.add_round_key
+Compiling module xil_defaultlib.inv_shift_rows
+Compiling module xil_defaultlib.inv_sbox
+Compiling module xil_defaultlib.inv_sub_bytes_default
+Compiling module xil_defaultlib.inv_mix_columns
+Compiling module xil_defaultlib.rot_word
+Compiling module xil_defaultlib.add_rcon
+Compiling module xil_defaultlib.aes128
+Compiling module xil_defaultlib.tb_aes128
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes128_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_aes128_behav -key {Behavioral:sim_1:Functional:tb_aes128} -tclbatch {tb_aes128.tcl} -view {F:/Project/AES-128/tb_aes128_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/Project/AES-128/tb_aes128_behav.wcfg
+source tb_aes128.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+Error: MISMATCH ADDROUNDKEY round=0 got=5f14c49e77ffbc07870d4e403c0e73e1 exp=7ad5fda789ef4e272bca100b3d9ff59f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=1 got=52525252525252525252520952525252 exp=bd6e7c3df2b5779e0b61216e8b10b689
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=1 got=00000000000000000000000100000000 exp=7a9f102789d5f50b2beffd9f3dca4ea7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=1 got=dd35581a338e949c11f994c977cad0d8 exp=54d990a16ba09ab596bbf40ea111702f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=1 got=880657697906ce23101613fe41281d29 exp=e9f74eec023020f61bf2ccf2353c21c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=2 got=52525252525252525252525252525252 exp=fde3bad205e5d0d73547964ef1fe37f1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=2 got=00000000000000000000000000000000 exp=5411f4b56bd9700e96a0902fa1bb9aa1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=2 got=becd4ef0ee20b90f9cba4ea58813fd1e exp=3e1c22c0b6fcbf768da85067f6170495
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=2 got=21ad33b8a352cb183b428fd4036c5cde exp=baa03de7a1f9b56ed5512cba5f414d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=3 got=52525252525252525252525252525252 exp=d1876c0f79c4300ab45594add66ff41f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=3 got=00000000000000000000000000000000 exp=3e175076b61c04678dfc2295f6a8bfc0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=3 got=c235469d4f769cf1b0afb1375bdf2f4a exp=b458124c68b68a014b99f82e5f15554c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=3 got=90cb54bfd0adaaf2ca42169e6a7c8158 exp=c57e1c159a9bd286f05f4be098c63439
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=4 got=52525252525252525252525252525252 exp=c62fe109f75eedc3cc79395d84f9cf5d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=4 got=00000000000000000000000000000000 exp=b415f8016858552e4bb6124c5f998a4c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=4 got=81e11a0cadf4e59e7e3837ca46847be3 exp=e8dab6901477d4653ff7f5e2e747dd4f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=4 got=6243e05f1234ac1f48bdee3ef26cc594 exp=9816ee7400f87f556b2c049c8e5ad036
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=5 got=52525252525252525252520952525252 exp=c81677bc9b7ac93b25027992b0261996
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=5 got=00000000000000000000000100000000 exp=e847f56514dadde23f77b64fe7f7d490
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=5 got=707a122ebeed94cca3b6c0658651d8e5 exp=36339d50f9b539269f2c092dc4406d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=5 got=7cb24cab22251e1208db1028e88379f8 exp=f4bcd45432e554d075f1d6c51dd03b3c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=6 got=52525252525252525252520952525252 exp=247240236966b3fa6ed2753288425b6c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=6 got=00000000000000000000000100000000 exp=36400926f9336d2d9fb59d23c42c3950
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=6 got=2d5d8879f0d37fc93006dccfd5346749 exp=2d6d7ef03f33e334093602dd5bfb12c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=6 got=064b714a0cc500eb78ac5c68b20a3bd9 exp=6385b79ffc538df997be478e7547d691
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=7 got=52525252525252525252520952525252 exp=fa636a2825b339c940668a3157244d17
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=7 got=00000000000000000000000100000000 exp=2dfb02343f6d12dd09337ec75b36e3f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=7 got=6d53d243fee3cef6ad86715a1bd17570 exp=3bd92268fc74fb735767cbe0c0590e2d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=7 got=2acef63e58dc23f3263b0ed198f435b8 exp=4c9c1e66f771f0762c3f868e534df256
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=8 got=52525252525252525252525252525252 exp=4915598f55e5d7a0daca94fa1f0a63f7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=8 got=00000000000000000000000000000000 exp=3b59cb73fcd90ee05774222dc067fb68
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=8 got=64d078cbf950d55e37b5c7674f07d174 exp=a7be1a6997ad739bd8c9ca451f618b61
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=8 got=a42cd5902040879f2cb57f2bec9d6960 exp=ff87968431d86a51645151fa773ad009
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=9 got=52525252525252525252525252525252 exp=89d810e8855ace682d1843d8cb128fe4
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=9 got=00000000000000000000000000000000 exp=a761ca9b97be8b45d8ad1a611fc97369
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=9 got=a8750c613246ba5c66901e584af4ac4f exp=6353e08c0960e104cd70b751bacad0e7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=9 got=926b662ad63e005d5ea7aae6927a4419 exp=5f72641557f5bc92f7be3b291db9f91a
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=10 got=52525252525252525252520952525252 exp=00102030405060708090a0b0c0d0e0f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=10 got=00000000000000000000000100000000 exp=63cab7040953d051cd60e0e7ba70e18c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH ADDROUNDKEY round=10 got=5243706116073425dacbf8b29e8fbcad exp=00112233445566778899aabbccddeeff
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: TIMEOUT: in_scb pass=1 fail=40, scb pass=0 fail=0
+Time: 5020 ns  Iteration: 0  Process: /$unit_aes128_sv_3205676280/aes_env::run/xilinx_isim_temp_7_ln536disable_fork_::_Block530_8  Scope: $unit_aes128_sv_3205676280.aes_env::run  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 532
+SCOREBOARD: PASS=0 FAIL=0
+SCOREBOARD: PASS=1 FAIL=40
+$finish called at time : 5020 ns : File "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" Line 580
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_aes128_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1778.488 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 17:42:59 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Program/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'w' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:181]
+WARNING: [VRFC 10-3818] variable 'done' is driven by invalid combination of procedural drivers [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:410]
+WARNING: [VRFC 10-2921] 'done' driven by this always_ff block should not be driven by any other process [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:413]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_aes128_sv_3205676280
+Compiling package std.std
+Compiling module xil_defaultlib.drv_cb
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_if_default
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_probe_if_default
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.sub_bytes_default
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.add_round_key
+Compiling module xil_defaultlib.inv_shift_rows
+Compiling module xil_defaultlib.inv_sbox
+Compiling module xil_defaultlib.inv_sub_bytes_default
+Compiling module xil_defaultlib.inv_mix_columns
+Compiling module xil_defaultlib.rot_word
+Compiling module xil_defaultlib.add_rcon
+Compiling module xil_defaultlib.aes128
+Compiling module xil_defaultlib.tb_aes128
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes128_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_aes128_behav -key {Behavioral:sim_1:Functional:tb_aes128} -tclbatch {tb_aes128.tcl} -view {F:/Project/AES-128/tb_aes128_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/Project/AES-128/tb_aes128_behav.wcfg
+source tb_aes128.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+Error: MISMATCH ADDROUNDKEY round=0 got=5f14c49e77ffbc07870d4e403c0e73e1 exp=7ad5fda789ef4e272bca100b3d9ff59f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=1 got=52525252525252525252520952525252 exp=bd6e7c3df2b5779e0b61216e8b10b689
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=1 got=00000000000000000000000100000000 exp=7a9f102789d5f50b2beffd9f3dca4ea7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=1 got=dd35581a338e949c11f994c977cad0d8 exp=54d990a16ba09ab596bbf40ea111702f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=1 got=880657697906ce23101613fe41281d29 exp=e9f74eec023020f61bf2ccf2353c21c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=2 got=52525252525252525252525252525252 exp=fde3bad205e5d0d73547964ef1fe37f1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=2 got=00000000000000000000000000000000 exp=5411f4b56bd9700e96a0902fa1bb9aa1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=2 got=becd4ef0ee20b90f9cba4ea58813fd1e exp=3e1c22c0b6fcbf768da85067f6170495
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=2 got=21ad33b8a352cb183b428fd4036c5cde exp=baa03de7a1f9b56ed5512cba5f414d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=3 got=52525252525252525252525252525252 exp=d1876c0f79c4300ab45594add66ff41f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=3 got=00000000000000000000000000000000 exp=3e175076b61c04678dfc2295f6a8bfc0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=3 got=c235469d4f769cf1b0afb1375bdf2f4a exp=b458124c68b68a014b99f82e5f15554c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=3 got=90cb54bfd0adaaf2ca42169e6a7c8158 exp=c57e1c159a9bd286f05f4be098c63439
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=4 got=52525252525252525252525252525252 exp=c62fe109f75eedc3cc79395d84f9cf5d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=4 got=00000000000000000000000000000000 exp=b415f8016858552e4bb6124c5f998a4c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=4 got=81e11a0cadf4e59e7e3837ca46847be3 exp=e8dab6901477d4653ff7f5e2e747dd4f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=4 got=6243e05f1234ac1f48bdee3ef26cc594 exp=9816ee7400f87f556b2c049c8e5ad036
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=5 got=52525252525252525252520952525252 exp=c81677bc9b7ac93b25027992b0261996
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=5 got=00000000000000000000000100000000 exp=e847f56514dadde23f77b64fe7f7d490
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=5 got=707a122ebeed94cca3b6c0658651d8e5 exp=36339d50f9b539269f2c092dc4406d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=5 got=7cb24cab22251e1208db1028e88379f8 exp=f4bcd45432e554d075f1d6c51dd03b3c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=6 got=52525252525252525252520952525252 exp=247240236966b3fa6ed2753288425b6c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=6 got=00000000000000000000000100000000 exp=36400926f9336d2d9fb59d23c42c3950
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=6 got=2d5d8879f0d37fc93006dccfd5346749 exp=2d6d7ef03f33e334093602dd5bfb12c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=6 got=064b714a0cc500eb78ac5c68b20a3bd9 exp=6385b79ffc538df997be478e7547d691
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=7 got=52525252525252525252520952525252 exp=fa636a2825b339c940668a3157244d17
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=7 got=00000000000000000000000100000000 exp=2dfb02343f6d12dd09337ec75b36e3f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=7 got=6d53d243fee3cef6ad86715a1bd17570 exp=3bd92268fc74fb735767cbe0c0590e2d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=7 got=2acef63e58dc23f3263b0ed198f435b8 exp=4c9c1e66f771f0762c3f868e534df256
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=8 got=52525252525252525252525252525252 exp=4915598f55e5d7a0daca94fa1f0a63f7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=8 got=00000000000000000000000000000000 exp=3b59cb73fcd90ee05774222dc067fb68
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=8 got=64d078cbf950d55e37b5c7674f07d174 exp=a7be1a6997ad739bd8c9ca451f618b61
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=8 got=a42cd5902040879f2cb57f2bec9d6960 exp=ff87968431d86a51645151fa773ad009
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=9 got=52525252525252525252525252525252 exp=89d810e8855ace682d1843d8cb128fe4
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=9 got=00000000000000000000000000000000 exp=a761ca9b97be8b45d8ad1a611fc97369
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH MIXCOLUMNS round=9 got=a8750c613246ba5c66901e584af4ac4f exp=6353e08c0960e104cd70b751bacad0e7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 479
+Error: MISMATCH ADDROUNDKEY round=9 got=926b662ad63e005d5ea7aae6927a4419 exp=5f72641557f5bc92f7be3b291db9f91a
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: MISMATCH SUBBYTES round=10 got=52525252525252525252520952525252 exp=00102030405060708090a0b0c0d0e0f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 467
+Error: MISMATCH SHIFTROWS round=10 got=00000000000000000000000100000000 exp=63cab7040953d051cd60e0e7ba70e18c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 472
+Error: MISMATCH ADDROUNDKEY round=10 got=5243706116073425dacbf8b29e8fbcad exp=00112233445566778899aabbccddeeff
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block456_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block456_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 485
+Error: TIMEOUT: in_scb pass=1 fail=40, scb pass=0 fail=0
+Time: 5020 ns  Iteration: 0  Process: /$unit_aes128_sv_3205676280/aes_env::run/xilinx_isim_temp_7_ln536disable_fork_::_Block530_8  Scope: $unit_aes128_sv_3205676280.aes_env::run  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 532
+SCOREBOARD: PASS=0 FAIL=0
+SCOREBOARD: PASS=1 FAIL=40
+$finish called at time : 5020 ns : File "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" Line 580
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_aes128_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1797.055 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 18:02:21 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Program/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2991] 'around_key' is not declared under prefix 's' [F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv:499]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 18:02:57 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2025.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Program/Vivado/2025.2/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes128_behav xil_defaultlib.tb_aes128 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 4 for port 'w' [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:181]
+WARNING: [VRFC 10-3818] variable 'done' is driven by invalid combination of procedural drivers [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:410]
+WARNING: [VRFC 10-2921] 'done' driven by this always_ff block should not be driven by any other process [F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv:413]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_aes128_sv_3205676280
+Compiling package std.std
+Compiling module xil_defaultlib.drv_cb
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_if_default
+Compiling module xil_defaultlib.mon_cb
+Compiling module xil_defaultlib.aes_probe_if_default
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.sub_bytes_default
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.add_round_key
+Compiling module xil_defaultlib.inv_shift_rows
+Compiling module xil_defaultlib.inv_sbox
+Compiling module xil_defaultlib.inv_sub_bytes_default
+Compiling module xil_defaultlib.inv_mix_columns
+Compiling module xil_defaultlib.rot_word
+Compiling module xil_defaultlib.add_rcon
+Compiling module xil_defaultlib.aes128
+Compiling module xil_defaultlib.tb_aes128
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes128_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_aes128_behav -key {Behavioral:sim_1:Functional:tb_aes128} -tclbatch {tb_aes128.tcl} -view {F:/Project/AES-128/tb_aes128_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config F:/Project/AES-128/tb_aes128_behav.wcfg
+source tb_aes128.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10000ns
+Error: MISMATCH ROUND KEY round=0 got=36d024461d84b8375fc0f9c04cbab6bb exp=13111d7fe3944a17f307a78b4d2b30c5
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH ADDROUNDKEY round=0 got=5f14c49e77ffbc07870d4e403c0e73e1 exp=7ad5fda789ef4e272bca100b3d9ff59f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=1 got=da54053b2b549c71424441f7137a4f7b exp=549932d1f08557681093ed9cbe2c974e
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=1 got=52525252525252525252520952525252 exp=bd6e7c3df2b5779e0b61216e8b10b689
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=1 got=00000000000000000000000100000000 exp=7a9f102789d5f50b2beffd9f3dca4ea7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=1 got=dd35581a338e949c11f994c977cad0d8 exp=54d990a16ba09ab596bbf40ea111702f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=1 got=880657697906ce23101613fe41281d29 exp=e9f74eec023020f61bf2ccf2353c21c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=2 got=73ff61eaf100994a6910dd86513e0e8c exp=47438735a41c65b9e016baf4aebf7ad2
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=2 got=52525252525252525252525252525252 exp=fde3bad205e5d0d73547964ef1fe37f1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=2 got=00000000000000000000000000000000 exp=5411f4b56bd9700e96a0902fa1bb9aa1
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=2 got=becd4ef0ee20b90f9cba4ea58813fd1e exp=3e1c22c0b6fcbf768da85067f6170495
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=2 got=21ad33b8a352cb183b428fd4036c5cde exp=baa03de7a1f9b56ed5512cba5f414d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=3 got=c29906ed82fff8a0981044cc382ed30a exp=14f9701ae35fe28c440adf4d4ea9c026
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=3 got=52525252525252525252525252525252 exp=d1876c0f79c4300ab45594add66ff41f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=3 got=00000000000000000000000000000000 exp=3e175076b61c04678dfc2295f6a8bfc0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=3 got=c235469d4f769cf1b0afb1375bdf2f4a exp=b458124c68b68a014b99f82e5f15554c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=3 got=90cb54bfd0adaaf2ca42169e6a7c8158 exp=c57e1c159a9bd286f05f4be098c63439
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=4 got=3011b20d4066fe4d1aefbc6ca03e97c6 exp=5e390f7df7a69296a7553dc10aa31f6b
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=4 got=52525252525252525252525252525252 exp=c62fe109f75eedc3cc79395d84f9cf5d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=4 got=00000000000000000000000000000000 exp=b415f8016858552e4bb6124c5f998a4c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=4 got=81e11a0cadf4e59e7e3837ca46847be3 exp=e8dab6901477d4653ff7f5e2e747dd4f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=4 got=6243e05f1234ac1f48bdee3ef26cc594 exp=9816ee7400f87f556b2c049c8e5ad036
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=5 got=2ee01ef970774c405a894221bad12baa exp=3caaa3e8a99f9deb50f3af57adf622aa
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=5 got=52525252525252525252520952525252 exp=c81677bc9b7ac93b25027992b0261996
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=5 got=00000000000000000000000100000000 exp=e847f56514dadde23f77b64fe7f7d490
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=5 got=707a122ebeed94cca3b6c0658651d8e5 exp=36339d50f9b539269f2c092dc4406d23
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=5 got=7cb24cab22251e1208db1028e88379f8 exp=f4bcd45432e554d075f1d6c51dd03b3c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=6 got=541923185e9752b92afe0e61e058698b exp=47f7f7bc95353e03f96c32bcfd058dfd
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=6 got=52525252525252525252520952525252 exp=247240236966b3fa6ed2753288425b6c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=6 got=00000000000000000000000100000000 exp=36400926f9336d2d9fb59d23c42c3950
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=6 got=2d5d8879f0d37fc93006dccfd5346749 exp=2d6d7ef03f33e334093602dd5bfb12c7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=6 got=064b714a0cc500eb78ac5c68b20a3bd9 exp=6385b79ffc538df997be478e7547d691
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=7 got=789ca46c0a8e71a174695cd8caa667ea exp=b6ff744ed2c2c9bf6c590cbf0469bf41
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=7 got=52525252525252525252520952525252 exp=fa636a2825b339c940668a3157244d17
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=7 got=00000000000000000000000100000000 exp=2dfb02343f6d12dd09337ec75b36e3f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=7 got=6d53d243fee3cef6ad86715a1bd17570 exp=3bd92268fc74fb735767cbe0c0590e2d
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=7 got=2acef63e58dc23f3263b0ed198f435b8 exp=4c9c1e66f771f0762c3f868e534df256
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=8 got=f67e87c27212d5cd7ee72d79becf3b32 exp=b692cf0b643dbdf1be9bc5006830b3fe
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=8 got=52525252525252525252525252525252 exp=4915598f55e5d7a0daca94fa1f0a63f7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=8 got=00000000000000000000000000000000 exp=3b59cb73fcd90ee05774222dc067fb68
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=8 got=64d078cbf950d55e37b5c7674f07d174 exp=a7be1a6997ad739bd8c9ca451f618b61
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=8 got=a42cd5902040879f2cb57f2bec9d6960 exp=ff87968431d86a51645151fa773ad009
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=9 got=c0393478846c520f0cf5f8b4c028164b exp=d6aa74fdd2af72fadaa678f1d6ab76fe
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=9 got=52525252525252525252525252525252 exp=89d810e8855ace682d1843d8cb128fe4
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=9 got=00000000000000000000000000000000 exp=a761ca9b97be8b45d8ad1a611fc97369
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH MIXCOLUMNS round=9 got=a8750c613246ba5c66901e584af4ac4f exp=6353e08c0960e104cd70b751bacad0e7
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 517
+Error: MISMATCH ADDROUNDKEY round=9 got=926b662ad63e005d5ea7aae6927a4419 exp=5f72641557f5bc92f7be3b291db9f91a
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: MISMATCH ROUND KEY round=10 got=00112233445566778899aabbccddeeff exp=000102030405060708090a0b0c0d0e0f
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 499
+Error: MISMATCH SUBBYTES round=10 got=52525252525252525252520952525252 exp=00102030405060708090a0b0c0d0e0f0
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 505
+Error: MISMATCH SHIFTROWS round=10 got=00000000000000000000000100000000 exp=63cab7040953d051cd60e0e7ba70e18c
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 510
+Error: MISMATCH ADDROUNDKEY round=10 got=5243706116073425dacbf8b29e8fbcad exp=00112233445566778899aabbccddeeff
+Time: 355 ns  Iteration: 1  Process: /$unit_aes128_sv_3205676280/aes_internal_scoreboard::run/Block489_0  Scope: $unit_aes128_sv_3205676280.aes_internal_scoreboard::run.Block489_0  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 523
+Error: TIMEOUT: in_scb pass=1 fail=51, scb pass=0 fail=0
+Time: 5020 ns  Iteration: 0  Process: /$unit_aes128_sv_3205676280/aes_env::run/xilinx_isim_temp_7_ln574disable_fork_::_Block568_8  Scope: $unit_aes128_sv_3205676280.aes_env::run  File: F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv Line: 570
+SCOREBOARD: PASS=0 FAIL=0
+SCOREBOARD: PASS=1 FAIL=51
+$finish called at time : 5020 ns : File "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" Line 618
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_aes128_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1946.984 ; gain = 17.531
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Mon Nov 16 18:03:44 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_aes128'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Program/Vivado/2025.2/Vivado/tps/boost_1_72_0'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sim_1\new\tb_aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\aes128.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\Project\AES-128\AES-128.srcs\sources_1\new\add_round_key.sv:]
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_aes128' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim'
+ERROR: [Common 17-180] Spawn failed: The operation completed successfully.
+
+"xvlog --incr --relax -L uvm -prj tb_aes128_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_round_key.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/rot_word.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rot_word
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/add_rcon.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_rcon
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sub_bytes.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sub_bytes
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_shift_rows.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_shift_rows
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_mix_columns.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_mix_columns
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sources_1/new/inv_sbox.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inv_sbox
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+ERROR: [USF-XSim-62] 'compile' step failed with error(s) while executing 'F:/Project/AES-128/AES-128.sim/sim_1/behav/xsim/compile.bat' script. Please check that the file has the correct 'read/write/execute' permissions and the Tcl console output for any other possible errors or warnings.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 16 18:03:59 2026...

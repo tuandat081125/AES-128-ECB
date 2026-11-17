@@ -24,3 +24,5 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.sr
 INFO: [VRFC 10-311] analyzing module inv_sbox
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_aes128
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "F:/Project/AES-128/AES-128.srcs/sim_1/new/tb_aes128_raw.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_aes128_raw

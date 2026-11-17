@@ -13,6 +13,7 @@ sv xil_defaultlib  --include "../../../../../../Program/Vivado/2025.2/Vivado/dat
 "../../../../AES-128.srcs/sources_1/new/inv_mix_columns.sv" \
 "../../../../AES-128.srcs/sources_1/new/inv_sbox.sv" \
 "../../../../AES-128.srcs/sim_1/new/tb_aes128.sv" \
+"../../../../AES-128.srcs/sim_1/new/tb_aes128_raw.sv" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"
